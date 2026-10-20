@@ -1,0 +1,63 @@
+.video {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding-top: clamp(var(--space-7), 90.81px + -6.62vw, var(--space-7-lg));
+    padding-bottom: var(--space-7-lg);
+    padding-left: clamp(var(--space-4), -60.34px + 20.36vw, var(--space-8));
+    padding-right: clamp(var(--space-4), -60.34px + 20.36vw, var(--space-8));
+}
+
+.video__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video__title {
+    text-transform: uppercase;
+    font-size: clamp(var(--font-size-xl), 16.37px + 2.04vw, var(--font-size-2xl));
+}
+
+.video__subtitle {
+    width: 85%;
+    padding-top: clamp(var(--space-5), 59.08px + -5.09vw, var(--space-7));
+    padding-bottom: clamp(var(--space-7), 15.19px + 6.62vw, var(--space-7-lg));
+}
+
+.video__image {
+    margin-bottom: -140px;
+    border-radius: var(--space-3);
+    width: 100%;
+    box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.24);
+}
+
+@media (min-width: 768px) {
+    .video {
+        padding-top: clamp(var(--space-7), -92.00px + 17.19vw, var(--space-9));
+        padding-right: clamp(var(--space-8), -261.00px + 46.48vw, var(--space-11));
+        padding-left: clamp(var(--space-8), -261.00px + 46.48vw, var(--space-11));
+    }
+
+    .video__title {
+        font-weight: var(--font-weight-bold);
+        width: 90%;
+    }
+
+    .video__subtitle {
+        padding-top: clamp(var(--space-5), 12.00px + 1.04vw, var(--space-6-lg));
+    }
+
+    .video__image {
+        margin-bottom: -190px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .video {
+        background: url("../../assets/Rectangle 15.png") center/cover no-repeat;
+    }
+    .video__image {
+        width: 100%;
+    }
+}

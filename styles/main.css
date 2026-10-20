@@ -1,0 +1,105 @@
+/*primitive tokens*/
+:root {
+    --font-family: sans-serif;
+
+    --font-size-xs: 12px;
+    --font-size-base: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 40px;
+    --font-size-4xl: 48px;
+    --font-size-5xl: 64px;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+
+    --color-primary: #5956E9;
+    --color-black: #232233;
+    --color-white: #FFFFFF;
+    --color-body-text: #6C6C72;
+
+    --radius-xs: 4px;
+    --radius-sm: 10px;
+
+    --space-1-lg: 2px;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-6-lg: 32px;
+    --space-7: 40px;
+    --space-7-lg: 66px;
+    --space-8: 96px;
+    --space-9: 128px;
+    --space-10: 160px;
+    --space-10-lg: 252px;
+    --space-11: 334px;
+
+    --container-max: 375px;
+
+}
+
+/*semantic tokens*/
+:root {
+    --container-gutter: var(--space-6);
+    --hero-padding-top: var(--space-9);
+    --hero-padding-bottom: var(--space-9);
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+    font-weight: var(--font-weight-bold);
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h4 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+}
+
+h5 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h6 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+h7 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+}
+
+h8 {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-light);
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+.hero {
+    font-size: 32px;
+    padding: 32px;
+    color: white;
+    background: green url("../assets/BackgroundImage.png") center/cover no-repeat;
+    min-height: 500px;
+}
+
+.hero-content {
+    text-align: center;
+
+}
+
+.red-box {
+    background: green;
+    text-align: center;
+    overflow-block: hidden;
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

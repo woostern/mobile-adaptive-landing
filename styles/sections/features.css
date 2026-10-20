@@ -1,0 +1,118 @@
+.features {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-7-lg) var(--space-7);
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.features__about {
+    text-align: center;
+    padding-top: var(--space-4);
+    padding-bottom: clamp(var(--space-6-lg), calc(17.91px + 3.76vw), var(--space-7-lg));
+}
+
+.features__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-7);
+    width: 100%;
+    padding-left: var(--space-6-lg);
+    padding-right: var(--space-6-lg);
+    box-sizing: border-box;
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features__item-title {
+    text-transform: uppercase;
+    padding-top: var(--space-6-lg);
+    padding-bottom: var(--space-4);
+}
+
+.features__title {
+    font-size: clamp(var(--font-size-xl), calc(20.69px + 0.88vw), var(--font-size-2xl));
+}
+
+.features__image {
+    filter: drop-shadow(40px 40px 100px #18303F);
+    border-radius: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .features__title {
+        font-weight: var(--font-weight-bold);
+    }
+
+    .features__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            ". top ."
+            "left-top phone right-top"
+            "left-bottom bottom right-bottom";
+        gap: var(--space-2);
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .features__item--top {
+        grid-area: top;
+        text-align: center;
+        padding-bottom: var(--space-7);
+    }
+
+    .features__item--bottom {
+        grid-area: bottom;
+        text-align: center;
+        padding-top: var(--space-7);
+    }
+
+    .features__item--left-top {
+        grid-area: left-top;
+        text-align: right;
+        align-items: flex-end;
+    }
+
+    .features__item--right-top {
+        grid-area: right-top;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .features__item--left-bottom {
+        grid-area: left-bottom;
+        text-align: right;
+        align-items: flex-end;
+    }
+
+    .features__item--right-bottom {
+        grid-area: right-bottom;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .features__image {
+        grid-area: phone;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    .features__list {
+        padding-left: var(--space-9);
+        padding-right: var(--space-9);
+    }
+}
