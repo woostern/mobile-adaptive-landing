@@ -12,6 +12,7 @@
 }
 
 .about__title {
+    text-transform: uppercase;
     font-size: clamp(var(--font-size-xl), calc(1.781vw + 18.32px), var(--font-size-2xl));
 }
 
@@ -19,18 +20,24 @@
     padding-top: var(--space-4);
     padding-bottom: clamp(var(--space-7), calc(6.616vw + 15.19px), var(--space-7-lg));
     color: var(--color-body-text);
-    width: 300px;
+    width: 90%;
     text-align: center;
+}
+
+.about__text-big,
+.about__text-extra {
+    display: none;
 }
 
 .about__description {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--space-7);
 }
 
 .about__image {
-    width: 100%;
+    width: 70%;
 }
 
 .about__list {
@@ -47,8 +54,12 @@
     padding-bottom: var(--space-3);
     padding-left: var(--space-5);
     padding-right: var(--space-4);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.about__item-text-extra {
+    display: none;
 }
 
 .about__item-text {
@@ -67,14 +78,14 @@
 }
 
 .checkbox {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 @media (min-width: 768px) {
     .about {
-        padding-left: clamp(var(--space-7), calc(23.4375vw - 140px), var(--space-10));
-        padding-right: clamp(var(--space-7), calc(23.4375vw - 140px), var(--space-10));
+        padding-left: clamp(var(--space-7), -92.00px + 17.19vw, var(--space-9));
+        padding-right: clamp(var(--space-7), -92.00px + 17.19vw, var(--space-9));
     }
     .about__title {
         font-weight: var(--font-weight-bold);
@@ -90,10 +101,36 @@
     .about__item-subtitle {
         word-break: normal;
     }
+    .about__text {
+        width: 65%;
+    }
+    .about__text-big {
+        display: inline;
+    }
+    .about__item {
+        padding-top: clamp(var(--space-4), -8.00px + 3.13vw, var(--space-6-lg));
+    }
 }
 
 @media (min-width: 1280px) {
     .about__image {
-        width: 50%;
+        width: 30%;
+    }
+    .about__item-text-extra {
+        display: inline;
+    }
+    .about__text {
+        display: none;
+    }
+    .about__text-extra {
+        display: inline;
+        text-align: center;
+        padding-top: var(--space-4);
+        padding-bottom: var(--space-7-lg);
+        color: var(--color-body-text);
+        width: 65%;
+    }
+    .about__list {
+        flex: 1;
     }
 }

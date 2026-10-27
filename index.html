@@ -6,6 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/sections/header.css">
     <link rel="stylesheet" href="styles/sections/app.css">
@@ -24,35 +28,87 @@
 <body>
 
 <header class="header">
+    <div class="header__top">
+        <div class="header__contacts">
+            <a class="header__contact">
+                <img class="header__icon" src="assets/email.png">
+                <h7 class="header__title">info@youremail.com</h7>
+            </a>
+            <a class="header__contact">
+                <img class="header__icon" src="assets/phone-mini.png">
+                <h7 class="header__title">(480) 555-0103</h7>
+            </a>
+        </div>
+        <div class="header__socials">
+            <a class="header__social">
+                <img class="header__social-link" src="assets/faceb-mini.png">
+            </a>
+            <a class="header__social">
+                <img class="header__social-link" src="assets/instagram-mini.png">
+            </a>
+            <a class="header__social">
+                <img class="header__social-link" src="assets/twitter-mini.png">
+            </a>
+            <a class="header__social">
+                <img class="header__social-link" src="assets/youtube-mini.png">
+            </a>
+        </div>
+    </div>
+
     <div class="header__container">
-        <a class="header__hamburger">
-            <img class="header__hamburger-icon" src="assets/menu-line.png">
-        </a>
-        <div class="header__logo">APOLLY</div>
-        <button class="header__button button">Download</button>
+        <div class="header__left">
+            <a class="header__hamburger">
+                <img class="header__hamburger-icon" src="assets/menu-line.png">
+            </a>
+            <div class="header__menu">
+                <a class="header__menu-item header__menu-active">Home</a>
+                <a class="header__menu-item">About</a>
+                <a class="header__menu-item">Features</a>
+            </div>
+        </div>
+
+        <div class="header__logo">🗻APOLLY</div>
+
+        <div class="header__right">
+            <div class="header__menu header__menu-right">
+                <a class="header__menu-item">Screenshot</a>
+                <a class="header__menu-item">Blog</a>
+            </div>
+            <div class="header__actions">
+                <button class="header__button button">Download</button>
+            </div>
+
+        </div>
     </div>
 </header>
 
 <section class="hero">
-    <div class="hero__container">
+    <div class="hero__card-wrapper">
+        <img class="hero__frame" src="assets/Rectangle%206.png">
 
-        <h5 class="hero__title">A Great App Makes
-            Your Life Better</h5>
-        <h7 class="hero__text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-            velit mollit.
-        </h7>
-        <h6 class="hero__subtitle">Download App Now</h6>
-        <div class="hero__buttons">
-            <a class="hero__actions">
-                <img class="hero__action" src="assets/toppng%201.png">
-            </a>
-            <a class="hero__actions">
-                <img class="hero__action" src="assets/PngItem_1144050%202.png">
-            </a>
+        <div class="hero__container">
+
+            <h5 class="hero__title">A Great App Makes
+                Your Life Better</h5>
+            <h7 class="hero__text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim
+                velit mollit.
+            </h7>
+            <h6 class="hero__subtitle">Download App Now</h6>
+            <div class="hero__buttons">
+                <a class="hero__actions">
+                    <img class="hero__action" src="assets/toppng%201.png">
+                </a>
+                <a class="hero__actions">
+                    <img class="hero__action" src="assets/PngItem_1144050%202.png">
+                </a>
+            </div>
         </div>
     </div>
-    <img class="hero__image" src="assets/Free%20Ui%20View%20Mobile%20App%20Mockup%201.png">
+    <div class="hero__wrapper">
+        <img class="hero__image" src="assets/Free%20Ui%20View%20Mobile%20App%20Mockup%202.png">
+    </div>
 </section>
 
 <section class="about">
@@ -60,7 +116,9 @@
         <h5 class="about__title">About Our App</h5>
         <h7 class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit
             vitae.
+            <span class="about__text-big">Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</span>
         </h7>
+        <h7 class="about__text-extra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</h7>
         <div class="about__description">
             <img class="about__image" src="assets/App%20Design.png">
             <div class="about__list">
@@ -69,6 +127,7 @@
                     <div class="about__item-text">
                         <h6 class="about__item-title">Creative design</h6>
                         <h7 class="about__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <span class="about__item-text-extra">Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</span>
                         </h7>
                     </div>
                 </div>
@@ -77,6 +136,7 @@
                     <div class="about__item-text">
                         <h6 class="about__item-title">easy to use</h6>
                         <h7 class="about__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <span class="about__item-text-extra">Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</span>
                         </h7>
                     </div>
                 </div>
@@ -85,6 +145,7 @@
                     <div class="about__item-text">
                         <h6 class="about__item-title">Best user experience</h6>
                         <h7 class="about__item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <span class="about__item-text-extra">Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.</span>
                         </h7>
                     </div>
                 </div>
@@ -98,6 +159,7 @@
         <h5 class="features__title">App features</h5>
         <h7 class="features__about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit
             vitae.
+            <span class="features__about-big">Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus.</span>
         </h7>
         <div class="features__list">
             <div class="features__item features__item--top">
@@ -419,7 +481,8 @@
         <div class="footer__body">
             <div class="footer__item-about">
                 <h4 class="footer__logo">Logo</h4>
-                <h7 class="footer__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+                <h7 class="footer__text-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                    ante
                     velit vitae. Est tellus vitae, nullam lobortis enim.
                 </h7>
                 <div class="footer__socials">
@@ -452,9 +515,10 @@
                     update & news
                 </h7>
                 <div class="footer__form">
-                    <h7 class="footer__form-text">Your email address</h7>
-                    <img class="footer__form-image" src="assets/send-plane-2-fill.png">
+                    <input id="email-input" class="footer__form-text" placeholder="Your email address" size="1"/>
+                    <img class="footer__form-image" onclick="sendMessage();" src="assets/send-plane-2-fill.png">
                 </div>
+                <h7 id="messageText" class="inVisible">Ваше письмо отправлено на емаил</h7>
             </div>
 
         </div>
@@ -465,6 +529,19 @@
         </div>
     </div>
 </section>
+
+<script>
+
+    function sendMessage() {
+        const input = document.getElementById('email-input');
+        console.log(input.value);
+
+        const messageText = document.getElementById('messageText');
+        messageText.textContent = 'Ваше письмо отправлено на емаил' + input.value;
+        messageText.classList.remove('inVisible');
+    }
+
+</script>
 
 </body>
 </html>

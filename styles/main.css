@@ -1,6 +1,6 @@
 /*primitive tokens*/
 :root {
-    --font-family: sans-serif;
+    --font-family: josefin Sans, sans-serif;
 
     --font-size-xs: 12px;
     --font-size-base: 16px;
@@ -24,6 +24,7 @@
 
     --radius-xs: 4px;
     --radius-sm: 10px;
+    --radius-md: 35px;
 
     --space-1-lg: 2px;
     --space-1: 4px;
@@ -93,6 +94,7 @@ h6 {
 h7 {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-regular);
+    line-height: 1.5;
 }
 
 h8 {
