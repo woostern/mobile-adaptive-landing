@@ -23,6 +23,11 @@
     width: 80%;
 }
 
+.customers__subtitle-big,
+.customers__subtitle-extra {
+    display: none;
+}
+
 .customers__list {
     display: flex;
     flex-direction: row;
@@ -76,6 +81,10 @@
     color: var(--color-body-text);
 }
 
+.customers__item--text-big {
+    display: none;
+}
+
 .customers__dots {
     display: flex;
     flex-direction: row;
@@ -110,12 +119,18 @@
 }
 
 @media (min-width: 768px) {
+    .customers {
+        background: url("../../assets/Rectangle23(2).png") center/cover no-repeat;
+    }
     .customers__title {
         font-weight: var(--font-weight-bold);
         padding-bottom: clamp(var(--space-4), 4.00px + 1.56vw, var(--space-6));
     }
     .customers__subtitle {
-        width: 55%;
+        width: 57%;
+    }
+    .customers__subtitle-big {
+        display: inline;
     }
     .customers__item-avatar {
         width: 14%;
@@ -134,7 +149,23 @@
 }
 
 @media (min-width: 1280px) {
+    .customers {
+        background: url("../../assets/Rectangle14(1).png") center/cover no-repeat;
+    }
+    .customers__subtitle {
+        display: none;
+    }
+    .customers__subtitle-extra {
+        display: inline;
+        width: 47%;
+    }
     .customers__item-name {
         font-weight: var(--font-weight-bold);
+    }
+    .customers__item-text {
+        width: 93%;
+    }
+    .customers__item--text-big {
+        display: inline;
     }
 }

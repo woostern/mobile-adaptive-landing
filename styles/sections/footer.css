@@ -79,7 +79,7 @@
 
 .footer__text-about {
     padding-top: var(--space-1);
-    width: 60%;
+    width: 95%;
 }
 
 .footer__social-link {
@@ -116,7 +116,7 @@
 }
 
 .footer__text-input {
-    width: 80%;
+    width: 90%;
     padding-top: var(--space-3);
     padding-bottom: var(--space-6-lg);
 }
@@ -204,7 +204,7 @@
     }
     .footer__body {
         flex-direction: row;
-        gap: 0;
+        gap: var(--space-6);
     }
     .footer__item-about {
         width: 35%;
@@ -219,7 +219,7 @@
         padding-right: clamp(var(--space-8), 0.00px + 12.50vw, var(--space-10));
     }
     .footer__form {
-        width: clamp(225px, 9.00px + 28.13vw, 369px);
+        width: clamp(200px, -53.50px + 33.01vw, 369px);
     }
     .footer__form-text {
         width: 100%;
@@ -251,5 +251,8 @@
     }
     .footer__divider {
         height: 117px;
+    }
+    .footer__contacts {
+        border-radius: var(--radius-xmd);
     }
 }

@@ -1,0 +1,29 @@
+.gallery__image {
+    width: 800px;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery__button {
+    border: none;
+    background: white;
+}
+
+.gallery__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.reset {
+    width: 300px;
+    height: auto;
+    background: #6C6C72;
+    font-size: 32px;
+    color: white;
+}
