@@ -1,0 +1,243 @@
+.schedule {
+    background: #F3F4F6;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule__header {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: fit-content;
+}
+
+.icon-dark {
+    display: none;
+}
+
+.schedule__header--line {
+    width: 100px;
+    height: 1px;
+    background: #6A7282;
+}
+
+.schedule__header--navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.schedule__button--icon {
+    width: 48px;
+    height: 48px;
+}
+
+.schedule__button--icon-center {
+    width: 104px;
+    height: 58px;
+}
+
+.schedule__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+}
+
+.schedule__content--line {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.schedule__content--line-button {
+    border: none;
+    background: none;
+}
+
+.schedule__content--line-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.sun {
+    display: none;
+}
+
+.schedule__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    font-family: sans-serif;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.schedule__input {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    width: 100%;
+}
+
+.schedule__input--form {
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.schedule__input--button {
+    background: black;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 12px;
+    border: 0;
+    font-size: 24px;
+}
+
+.schedule__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #6A7282;
+}
+
+.schedule__menu__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.schedule__menu--component-active {
+    border-left: 1px solid #6A7282;
+    padding-left: 4px;
+    border-right: 1px solid #6A7282;
+    padding-right: 4px;
+    color: black;
+}
+
+.schedule__tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    margin-top: -36px;
+}
+
+.schedule__task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 32px;
+    background: white;
+    color: black;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.schedule__task-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+}
+
+.schedule__task.completed .schedule__task-component {
+    text-decoration: line-through;
+    color: #6A7282;
+}
+
+.button {
+    background: none;
+    border: 0;
+}
+
+.schedule__tasks--checkbox {
+    accent-color: black;
+    width: 18px;
+    height: 18px;
+}
+
+.dark-theme .schedule {
+    background: #101828;
+}
+
+.dark-theme .schedule__header {
+    background: #1E2939;
+}
+
+.dark-theme .icon-light {
+    display: none;
+}
+
+.dark-theme .icon-dark {
+    display: block;
+}
+
+.dark-theme .moon {
+    display: none;
+}
+
+.dark-theme .sun {
+    display: block;
+}
+
+.dark-theme .schedule-title {
+    color: white;
+}
+
+.dark-theme .schedule__input--form {
+    background: #4A5565;
+    color: #A9A9A9;
+}
+
+.dark-theme .schedule__input--form::placeholder {
+    color: #A9A9A9;
+}
+
+.dark-theme .schedule__input--button {
+    background: #4A5565;
+}
+
+.dark-theme .schedule__menu {
+    color: #6A7282;
+}
+
+.dark-theme .schedule__menu--component-active {
+    color: white;
+}
+
+.dark-theme .schedule__task {
+    background: #1E2939;
+    color: white;
+}
+
+.dark-theme .schedule__tasks-image {
+    content: url("../../assets/pencil1(1).png");
+}
+
+.dark-theme .schedule__tasks--image-trash {
+    content: url("../../assets/trash2.png");
+}

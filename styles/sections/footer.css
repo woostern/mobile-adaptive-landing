@@ -163,8 +163,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: var(--space-4);
     padding-bottom: var(--space-6);
+}
+
+.footer__copyright-image {
+    width: 18px;
+    height: 18px;
 }
 
 .footer__copyright-text {
@@ -242,6 +248,10 @@
     }
     .footer__copy-divider {
         width: clamp(688px, 185.50px + 65.43vw, 1023px);
+    }
+    .footer__copyright-image {
+        width: 24px;
+        height: 24px;
     }
 }
 

@@ -1,0 +1,180 @@
+.schedule {
+    background: #F3F4F6;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule__header {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+    padding-top: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: fit-content;
+}
+
+.icon-dark {
+    display: none;
+}
+
+.schedule__header--line {
+    width: 100px;
+    height: 1px;
+    background: #6A7282;
+}
+
+.schedule__header--navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.schedule__button--icon {
+    width: 48px;
+    height: 48px;
+}
+
+.schedule__button--icon-center {
+    width: 104px;
+    height: 58px;
+}
+
+.button {
+    background: none;
+    border: 0;
+}
+
+.schedule__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 86px;
+    width: 100%;
+    padding: 32px;
+}
+
+.schedule__content--line {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.schedule__content--line-button {
+    border: none;
+    background: none;
+}
+
+.schedule__content--line-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.sun {
+    display: none;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 500px;
+}
+
+.dark-theme .login__title {
+    color: white;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.field {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.schedule__input--button {
+    background: black;
+    color: white;
+    padding: 16px 28px;
+    border-radius: 12px;
+    border: 0;
+    font-size: 24px;
+    align-self: center;
+}
+
+.dark-theme .schedule {
+    background: #101828;
+}
+
+.dark-theme .schedule__header {
+    background: #1E2939;
+}
+
+.dark-theme .icon-light {
+    display: none;
+}
+
+.dark-theme .icon-dark {
+    display: block;
+}
+
+.dark-theme .moon {
+    display: none;
+}
+
+.dark-theme .sun {
+    display: block;
+}
+
+.dark-theme .schedule-title {
+    color: white;
+}
+
+.dark-theme .field {
+    background: #4A5565;
+    color: #A9A9A9;
+}
+
+.dark-theme .field::placeholder {
+    color: #A9A9A9;
+}
+
+.dark-theme .schedule__input--button {
+    background: #4A5565;
+}
+
+.dark-theme .schedule__menu {
+    color: #6A7282;
+}
+
+.dark-theme .schedule__menu--component-active {
+    color: white;
+}
+
+.dark-theme .schedule__task {
+    background: #1E2939;
+    color: white;
+}
+
+.dark-theme .schedule__tasks-image {
+    content: url("../../assets/pencil1(1).png");
+}
+
+.dark-theme .schedule__tasks--image-trash {
+    content: url("../../assets/trash2.png");
+}

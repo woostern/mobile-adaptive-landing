@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="tasks-todo.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="schedule">
+    <div class="schedule__header">
+        <button id="schedule-button-left-menu" class="schedule__button--left-menu button">
+            <img class="schedule__button--icon icon-light" src="../../assets/menu1.png">
+            <img class="schedule__button--icon icon-dark" src="../../assets/menu2.png">
+        </button>
+        <div class="schedule__header--line"></div>
+        <div class="schedule__header--navigation">
+            <button id="schedule-button-tasks" class="schedule__button--tasks button">
+                <img class="schedule__button--icon-center" src="../../assets/menuTasks.png">
+            </button>
+            <button id="schedule-button-settings" class="schedule__button--settings button">
+                <img class="schedule__button--icon icon-light" src="../../assets/menuSettings.png">
+                <img class="schedule__button--icon icon-dark" src="../../assets/menuSettings2.png">
+            </button>
+        </div>
+    </div>
+    <div class="schedule__content">
+        <div class="schedule__content--line">
+            <button id="schedule-content-line-button" class="schedule__content--line-button" onclick="changeColorTheme()">
+                <img class="schedule__content--line-icon moon" src="../../assets/moon1.png">
+                <img class="schedule__content--line-icon sun" src="../../assets/sun1.png">
+            </button>
+        </div>
+        <div class="schedule__container">
+
+            <h1 class="schedule-title">My Tasks</h1>
+            <div class="schedule__input">
+                <input id="schedule-input-form" class="schedule__input--form" placeholder="Type your task here...">
+                <button id="schedule-input-button" class="schedule__input--button" onclick="addTask()">+ Add</button>
+            </div>
+            <div class="schedule__menu">
+                <div class="schedule__menu__left">
+                    <a class="schedule__menu--component">All</a>
+                    <a class="schedule__menu--component schedule__menu--component-active">Active</a>
+                    <a class="schedule__menu--component">Completed</a>
+                </div>
+                <p class="schedule__menu-component"></p>
+            </div>
+
+            <div id="schedule-tasks" class="schedule__tasks">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="tasks-todo.js"></script>
+</body>
+</html>

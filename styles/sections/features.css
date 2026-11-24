@@ -17,7 +17,8 @@
     padding-bottom: clamp(var(--space-6-lg), calc(17.91px + 3.76vw), var(--space-7-lg));
 }
 
-.features__about-big {
+.features__about-big,
+.features__about-extra {
     display: none;
 }
 
@@ -70,7 +71,12 @@
     .features__title {
         font-weight: var(--font-weight-bold);
     }
-
+    .features__about {
+        width: 65%;
+    }
+    .features__about-big {
+        display: inline;
+    }
     .features__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -135,6 +141,13 @@
 @media (min-width: 1280px) {
     .features {
         background: var(--color-primary) url("../../assets/Rectangle-14.png") center/cover no-repeat;
+    }
+    .features__about {
+        display: none;
+    }
+    .features__about-extra {
+        display: inline;
+        width: 50%;
     }
     .features__list {
         padding-left: var(--space-9);
